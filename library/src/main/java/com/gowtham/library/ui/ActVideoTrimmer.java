@@ -176,7 +176,7 @@ public class ActVideoTrimmer extends AppCompatActivity {
     private void setDataInView() {
         try {
             uri = Uri.parse(getIntent().getStringExtra(TrimVideo.TRIM_VIDEO_URI));
-            uri = Uri.parse(FileUtils.getPath(this, uri));
+//             uri = Uri.parse(FileUtils.getPath(this, uri));
             LogMessage.v("VideoUri:: " + uri);
             totalDuration = TrimmerUtils.getDuration(this, uri);
             imagePlayPause.setOnClickListener(v ->
