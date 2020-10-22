@@ -173,7 +173,7 @@ public class FileUtils {
                 }
             }
         }
-        return null;
+        return uri.getPath();
     }
 
     private static boolean fileExists(String filePath) {
